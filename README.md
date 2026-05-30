@@ -1,5 +1,4 @@
 # Deliberate Evolution: Agentic Reasoning for Sample-Efficient Symbolic Regression with LLMs
-[ICML 2026] Deliberate Evolution for Sample-Efficient Symbolic Regression with LLM.
 
 This repository contains the official implementation of our ICML 2026 paper:
 
