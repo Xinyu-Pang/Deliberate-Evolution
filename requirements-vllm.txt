@@ -1,0 +1,7 @@
+# OPTIONAL reference versions for the local vLLM model-serving example.
+# Not required for the method or for connecting to an existing model API.
+# These pins record the smoke-tested combination; other compatible versions may be used.
+# Prepare a separate serving environment using the official installation guide:
+# https://docs.vllm.ai/en/stable/getting_started/installation/
+vllm==0.8.5
+transformers==4.51.1

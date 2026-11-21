@@ -1,0 +1,16 @@
+# Deliberate Evolution: benchmark and search dependencies.
+# Model serving is installed separately; see requirements-vllm.txt.
+python-dotenv
+datasets
+h5py
+huggingface-hub
+numpy
+omegaconf
+openai>=1.0
+scipy
+scikit-learn
+sympy
+
+# Include the optional code paths for colored logging and LaTeX parsing.
+colorlog
+latex2sympy2

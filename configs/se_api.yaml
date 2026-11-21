@@ -1,0 +1,8 @@
+# OpenAI-compatible Chat Completions API example.
+# Reuse the method settings from se.yaml.
+base_config: se.yaml
+name: api
+api_type: openai
+# eval.py reads the base URL from OPENAI_API_URL in the environment/.env.
+api_url: null
+api_model: "your-model-id"

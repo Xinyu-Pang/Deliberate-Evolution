@@ -1,0 +1,40 @@
+name: qwen
+class_name: 'SESearcher'
+
+api_type: 'vllm'
+api_url: "http://localhost:{}/v1"
+api_model: "Qwen/Qwen3-4B-Instruct-2507"
+
+enable_tools: true
+log_level: INFO
+max_tool_rounds: 4
+
+use_evolution: true
+num_islands: 4
+samples_per_prompt: 4
+max_generations: 100
+population_size_per_island: 400
+reset_period: 50
+parallel_workers: 4
+
+target_original_idxes: null
+
+memory:
+  enabled: true
+  normal:
+    epoch_interval: 12
+    improvement_threshold: 0.1
+    good_top_s: 3
+    bad_top_f: 3
+  stagnation:
+    k: 8
+    cooldown: 4
+    top_k: 5
+    residual_analysis_top_n: 2
+    failed_mutations: 3
+    failed_parent_top_percent: 0.2
+  general:
+    insights_n: 3
+    max_entries: 1
+    min_improvement: 0.0
+    debug_save_memory: true
